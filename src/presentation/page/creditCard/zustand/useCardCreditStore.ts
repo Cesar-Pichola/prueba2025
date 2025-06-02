@@ -11,7 +11,7 @@ interface HistoryState {
     addHystory:  (data: IHistoy) => Promise<void>;
 }
 
-export const useCardCreditStore = create<HistoryState>((set, get) => (
+export const useCardCreditStore = create<HistoryState>((set, ) => (
     {
         isBusy: false,
         listData: [],
@@ -30,7 +30,7 @@ export const useCardCreditStore = create<HistoryState>((set, get) => (
 
         addHystory: async (data: IHistoy)=>{
                    const resolve = await container.resolve(AddCreditCardUseCase);
-            const response = await resolve.execute(data);
+            await resolve.execute(data);
             const resolget = await container.resolve(GetCreditCardUseCase);
             const responseHis = await resolget.execute();
                set(

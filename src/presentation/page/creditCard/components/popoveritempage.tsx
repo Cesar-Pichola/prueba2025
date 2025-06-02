@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import iconitempage from '../../../../../assets/img/iconselectitempage.png';
 
 interface ItemsPerPageSelectProps {

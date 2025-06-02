@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const steps = [
   { id: 1, label: 'Solicitud recibida' },
@@ -8,13 +8,13 @@ const steps = [
 ];
 
 const Stepper = () => {
-  const [currentStep, setCurrentStep] = useState(1); // Cambia esto para probar
+  const [currentStep, ] = useState(1); // Cambia esto para probar
 
   return (
     <div className="relative w-full  mx-auto px-4">
 
       <div className="flex justify-between relative z-10">
-        {steps.map((step, index) => {
+        {steps.map((step, ) => {
           const isActive = step.id <= currentStep;
 
 

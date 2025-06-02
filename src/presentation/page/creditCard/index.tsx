@@ -14,7 +14,7 @@ import { Footer } from "../../layout/components/footer";
 
 
 const CreditCard = () => {
-  const { listData, fetchHistory, isBusy } = useCardCreditStore();
+  const { listData, fetchHistory,  } = useCardCreditStore();
 
 
   useEffect(() => {

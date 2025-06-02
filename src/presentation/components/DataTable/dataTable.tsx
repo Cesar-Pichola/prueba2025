@@ -22,13 +22,11 @@ interface DataTableProps {
 
 const DataTable = ({
   colums,
-  title,
-  buttonAdd = true,
+
   data,
-  onDelete,
-  onEdit,
+ 
   itemsPerPage,
-  onAdd,
+
 }: DataTableProps) => {
 
   const [searchTerm, setSearchTerm] = useState('');
