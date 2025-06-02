@@ -10,11 +10,10 @@ const NavBar = () => {
             <div className="flex justify-between items-center">
                 <img src={logo} alt="Logo" width={161} height={54} style={{ objectFit: 'contain' }} />
                 <div className="hidden md:flex w-[409px] h-[50px] py-[16px] px-[24px] rounded-[16px]  gap-[32px] bg-[#FDFDFD] justify-center items-center">
-                    <p className="text-[14px] font-[400]">Conócenos</p>
-                    <p className="text-[14px] font-[400]">Servicios</p>
-                    <p className="text-[14px] font-[400]">Productos</p>
-                    <p className="text-[14px] font-[400]">Contáctanos</p>
-
+                    <p className="text-[14px] font-[400] hover:text-blue-500 hover:underline cursor-pointer">Conócenos</p>
+                    <p className="text-[14px] font-[400] hover:text-blue-500 hover:underline cursor-pointer">Servicios</p>
+                    <p className="text-[14px] font-[400] hover:text-blue-500 hover:underline cursor-pointer">Productos</p>
+                    <p className="text-[14px] font-[400] hover:text-blue-500 hover:underline cursor-pointer">Contáctanos</p>
                 </div>
 
                 <div className="hidden md:flex w-[120px] h-[56px] bg-[#C4C6F9] rounded-[16px]  p-[16px]  gap-[8px] justify-center  ">
@@ -23,9 +22,9 @@ const NavBar = () => {
                     <img src={exiticon} alt="exit" width={24} height={24} style={{ objectFit: 'contain' }} />
                 </div>
 
-                 <div className="md:hidden w-[64px] h-[64px] bg-[#C4C6F9] rounded-[24px] flex justify-center items-center">
-                      <img src={menuBurguer} alt="Logo" width={24} height={16} style={{ objectFit: 'contain' }} />
-                 </div>
+                <div className="md:hidden w-[64px] h-[64px] bg-[#C4C6F9] rounded-[24px] flex justify-center items-center">
+                    <img src={menuBurguer} alt="Logo" width={24} height={16} style={{ objectFit: 'contain' }} />
+                </div>
             </div>
         </>
     )
